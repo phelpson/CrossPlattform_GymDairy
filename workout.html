@@ -27,6 +27,9 @@
 </head>
 
 <body id="workoutBody">
+
+    <div class="container">
+        <h2>Workout-Type</h2>
         <input class="form-control" type="text" placeholder="Date" readonly>
         <div class="form-group">
             <label for="exampleFormControlSelect1">Workout Type</label>
@@ -39,28 +42,128 @@
                 <option>Arms</option>
             </select>
         </div>
-    <<div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <form>
-            <div class="form-group">
-                <label for="nameInput">Excercise Name</label>
-                <input type="exerciseName" class="form-control" id="nameInout" aria-describedby="emailHelp" placeholder="Enter Name of Exercise">
+        <div class="row">
+            <div class="col-sm">
+                <div class="card h-100">
+                    <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <form>
+                        <div class="form-group">
+                            <input type="exerciseName" class="form-control" id="nameInout" aria-describedby="emailHelp" placeholder="Enter Name of Exercise">
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="set-addon1">1</span>
+                                <input type="text" class="form-control" placeholder="Weight" aria-label="set-one" aria-describedby="basic-addon1">
+                                <select class="form-control" id="workoutType">
+                                        <option>kg</option>
+                                        <option>lbs</option>
+                                </select>
+                            </div>
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="set-addon2">2</span>
+                                <input type="text" class="form-control" placeholder="Weight" aria-label="set-two" aria-describedby="basic-addon1">
+                                <select class="form-control" id="workoutType">
+                                        <option>kg</option>
+                                        <option>lbs</option>
+                                </select>
+                            </div>
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="set-addon3">3</span>
+                                <input type="text" class="form-control" placeholder="Weight" aria-label="set-three" aria-describedby="basic-addon1">
+                                <select class="form-control" id="workoutType">
+                                        <option>kg</option>
+                                        <option>lbs</option>
+                                </select>
+                            </div>
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="set-addon4">4</span>
+                                <input type="text" class="form-control" placeholder="Weight" aria-label="set-four" aria-describedby="basic-addon1">
+                                <select class="form-control" id="workoutType">
+                                        <option>kg</option>
+                                        <option>lbs</option>
+                                </select>
+                            </div>
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="set-addon5">5</span>
+                                <input type="text" class="form-control" placeholder="Weight" aria-label="set-five" aria-describedby="basic-addon1">
+                                <select class="form-control" id="workoutType">
+                                        <option>kg</option>
+                                        <option>lbs</option>
+                                </select>
+                            </div>
+                        </form>
+                        <button type="save_exercise" class="exercise_buttons btn btn-primary mt-3">Save Exercise</button>
+                        <button type="save_exercise" class="exercise_buttons btn btn-secondary mt-1">Edit Exercise</button>
+                    </div>
+                </div>
+                </div>
             </div>
-            <div class="form-group">
-                    <div class="col-sm-6">
-                        <label for="nameInput">Excercise Name</label>
-                        <input type="exerciseName" class="form-control" id="nameInout" aria-describedby="emailHelp" placeholder="Enter Name of Exercise">
+            <div class="col-sm">
+                <div class="card h-100">
+                    <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <form>
+                        <div class="form-group">
+                            <input type="exerciseName" class="form-control" id="nameInout" aria-describedby="emailHelp" placeholder="Enter Name of Exercise">
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="set-addon1">1</span>
+                                <input type="text" class="form-control" placeholder="Weight" aria-label="set-one" aria-describedby="basic-addon1">
+                                <select class="form-control" id="workoutType">
+                                        <option>kg</option>
+                                        <option>lbs</option>
+                                </select>
+                            </div>
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="set-addon2">2</span>
+                                <input type="text" class="form-control" placeholder="Weight" aria-label="set-two" aria-describedby="basic-addon1">
+                                <select class="form-control" id="workoutType">
+                                        <option>kg</option>
+                                        <option>lbs</option>
+                                </select>
+                            </div>
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="set-addon3">3</span>
+                                <input type="text" class="form-control" placeholder="Weight" aria-label="set-three" aria-describedby="basic-addon1">
+                                <select class="form-control" id="workoutType">
+                                        <option>kg</option>
+                                        <option>lbs</option>
+                                </select>
+                            </div>
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="set-addon4">4</span>
+                                <input type="text" class="form-control" placeholder="Weight" aria-label="set-four" aria-describedby="basic-addon1">
+                                <select class="form-control" id="workoutType">
+                                        <option>kg</option>
+                                        <option>lbs</option>
+                                </select>
+                            </div>
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="set-addon5">5</span>
+                                <input type="text" class="form-control" placeholder="Weight" aria-label="set-five" aria-describedby="basic-addon1">
+                                <select class="form-control" id="workoutType">
+                                        <option>kg</option>
+                                        <option>lbs</option>
+                                </select>
+                            </div>
+                        </form>
+                        <button type="save_exercise" class="exercise_buttons btn btn-primary mt-3">Save Exercise</button>
+                        <button type="save_exercise" class="exercise_buttons btn btn-secondary mt-1">Edit Exercise</button>
                     </div>
-                    <div class="col-sm-6">
-                        <label for="nameInput">Excercise Name</label>
-                        <input type="exerciseName" class="form-control" id="nameInout" aria-describedby="emailHelp" placeholder="Enter Name of Exercise">
-                    </div>
-            <button type="addSet" class="btn btn-primary">Add Set</button>
-            </form>
+                </div>
+            </div>
         </div>
-      </div>
+        <div class="col-sm">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Add exercise</h5>
+                    <img id="plus_icon" src="plus.png">
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
 
