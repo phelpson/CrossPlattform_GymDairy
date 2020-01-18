@@ -10,7 +10,7 @@
     <script src="bootstrap/js/bootstrap.min.js"></script>
     
     <!-- Own Skript-->
-    <script src="main.js"></script>
+    <script src="workout.js"></script>
     <!-- Own CSS -->
     <link href="style.css" rel="stylesheet">
 
@@ -40,10 +40,10 @@
                 <option>Legs + Abs</option>
                 <option>Abs</option>
                 <option>Arms</option>
+                <option>Custom</option>
             </select>
         </div>
-        <div class="row">
-            <div class="col-sm">
+        <div class="workoutOverview">
                 <div class="card h-100">
                     <div class="card-body">
                     <h5 class="card-title">Card title</h5>
@@ -53,8 +53,8 @@
                         </div>
                         <div class="form-group">
                             <div class="input-group-prepend">
-                                <span class="input-group-text" id="set-addon1">1</span>
-                                <input type="text" class="form-control" placeholder="Weight" aria-label="set-one" aria-describedby="basic-addon1">
+                                <span class="input-group-text" id="set-addon2">1</span>
+                                <input type="text" class="form-control" placeholder="Weight" aria-label="set-two" aria-describedby="basic-addon1">
                                 <select class="form-control" id="workoutType">
                                         <option>kg</option>
                                         <option>lbs</option>
@@ -94,12 +94,10 @@
                             </div>
                         </form>
                         <button type="save_exercise" class="exercise_buttons btn btn-primary mt-3">Save Exercise</button>
-                        <button type="save_exercise" class="exercise_buttons btn btn-secondary mt-1">Edit Exercise</button>
+                        <button type="edit_exercise" class="exercise_buttons btn btn-secondary mt-1">Edit Exercise</button>
                     </div>
-                </div>
                 </div>
             </div>
-            <div class="col-sm">
                 <div class="card h-100">
                     <div class="card-body">
                     <h5 class="card-title">Card title</h5>
@@ -150,18 +148,15 @@
                             </div>
                         </form>
                         <button type="save_exercise" class="exercise_buttons btn btn-primary mt-3">Save Exercise</button>
-                        <button type="save_exercise" class="exercise_buttons btn btn-secondary mt-1">Edit Exercise</button>
-                    </div>
+                        <button type="edit_exercise" class="exercise_buttons btn btn-secondary mt-1">Edit Exercise</button>
                 </div>
             </div>
         </div>
-        <div class="col-sm">
             <div class="card h-100">
                 <div class="card-body">
                     <h5 class="card-title">Add exercise</h5>
-                    <img id="plus_icon" src="plus.png">
+                    <a href="#" id="addExercise" role="button" data-toggle ="modal" data-target="#addModal"><img id="plus_icon" src="plus.png"></a>
                 </div>
-            </div>
         </div>
     </div>
 
